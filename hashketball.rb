@@ -242,7 +242,7 @@ def winning_team
     end
   end
 
-  scores.max_by { |_k, v| v }.first
+  scores.max_by { |key, value| value }.first
 end
 
 def player_with_longest_name
